@@ -35,7 +35,7 @@ st.markdown("---")
 if data["income"] == 0:
   st.subheader("⚙️ إعدادات بداية الشهر")
   with st.form("setup_form"):
-    income_input = st.number_input("راتب أو معاش الشقة لهذا الشهر (₪):", min_value=0.0, step=100.0)
+    income_input = st.number_input("راتب أو معاش  لهذا الشهر (₪):", min_value=0.0, step=100.0)
     limit_input = st.number_input("الحد الأقصى المسموح صرفه (ميزانية الشهر المستهدفة) (₪):", min_value=0.0, step=100.0)
     
     submit_setup = st.form_submit_button("حفظ وحفظ البدء")
